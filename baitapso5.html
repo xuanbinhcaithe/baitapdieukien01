@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 5</title>
+</head>
+<body>
+    <!--xếp loại học lực của học sinh dựa trên bài kiểm tra,kiểm tra giữa kỳ và kiểm tra cuối kỳ-->
+    <script type="text/javascript">
+        let kiemtra=parseFloat(prompt("nhập điểm kiểm tra:"));
+        let giuaKy=parseFloat(prompt("nhập điểm kiểm tra giữa kỳ:"));
+        let cuoiKy=parseFloat(prompt("nhập điểm kiểm tra cuối kỳ"));
+        let tong=(kiemtra+giuaKy*2+cuoiKy*3)/6;
+         if (tong<5) {
+             alert("học lực yếu!");
+         } else if ( tong<=8) {
+             alert("học lực khá!");
+         } else if (tong<= 10) {
+             alert("học lực giỏi");
+         }else {
+             alert("nhập lại số điểm");
+         }
+
+
+    </script>
+
+</body>
+</html>

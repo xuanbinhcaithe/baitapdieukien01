@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 6</title>
+</head>
+<body>
+<!-- tính só hoa hồng nhân được tùy theo doanh số
+vd:doanh thu duwois 10tr nhận hoa hồng là 5%, trên 10 tr dưới 25 tr nhận 10% ve trên 25tr nhân 15%-->
+
+<script type="text/javascript">
+    let doanhThu = parseFloat(prompt("nhập vào doanh thu của bạn bằng số:"));
+    let hoaHong;
+    if (doanhThu<=10000000) {
+      hoaHong=doanhThu*0.05;
+    }else if(doanhThu > 10000000 && doanhThu<=25000000) {
+        hoaHong=doanhThu*0.1;
+    }else {
+        hoaHong=doanhThu*0.25;
+    }
+    alert(" số tiền thưởng bạn được nhận là "+hoaHong);
+</script>
+
+</body>
+</html>

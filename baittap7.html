@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập số 7</title>
+</head>
+<body>
+    <!--tính giá cước điện thoại của hộ gia đình theo các mức sử dụng
+    vd: só phút sử dụng duoi 100 phut cước mỗi phút sẽ là: 1000đ,trên 100 và
+    dưới 200 phut cước là 1200đ,trên 200 phút cước là 1500đ
+    -->
+<script type="text/javascript">
+    let soPhut=parseFloat(prompt("nhập vào số phút sư dụng điện thoại của bạn:"));
+    let soTien;
+    if (soPhut<=100) {
+        soTien=soPhut*1000;
+    } else if (soPhut>100 && soPhut<=200) {
+        soTien=soPhut*1200;
+    } else {
+        soTien=soPhut*1500;
+    }
+    alert(" số tiền bạn phải trả là :"+soTien+" vnd ");
+</script>
+
+
+</body>
+</html>
